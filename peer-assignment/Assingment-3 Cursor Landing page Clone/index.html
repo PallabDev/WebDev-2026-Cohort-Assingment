@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Cursor Clone Project</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="brand-icon">
+                <svg fill="none" class="w-[95.37px] lg:w-[95.75px]" viewBox="0 0 2193 545"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible">
+                    <g fill="white">
+                        <path
+                            d="m466.383 137.073-206.469-119.2034c-6.63-3.8287-14.811-3.8287-21.441 0l-206.4586 119.2034c-5.5734 3.218-9.0144 9.169-9.0144 15.615v240.375c0 6.436 3.441 12.397 9.0144 15.615l206.4686 119.203c6.63 3.829 14.811 3.829 21.441 0l206.468-119.203c5.574-3.218 9.015-9.17 9.015-15.615v-240.375c0-6.436-3.441-12.397-9.015-15.615zm-12.969 25.25-199.316 345.223c-1.347 2.326-4.904 1.376-4.904-1.319v-226.048c0-4.517-2.414-8.695-6.33-10.963l-195.7577-113.019c-2.3263-1.347-1.3764-4.905 1.3182-4.905h398.6305c5.661 0 9.199 6.136 6.368 11.041h-.009z">
+                        </path>
+                        <path
+                            d="m723.253 148.84h87.856v48.397h-84.881c-45.789 0-81.527 26.432-81.527 82.273s35.738 82.273 81.527 82.273h84.881v48.397h-91.578c-76.691 0-131.039-45.043-131.039-130.66 0-85.618 58.07-130.661 134.761-130.661z">
+                        </path>
+                        <path
+                            d="m855.781 148.84h54.348v159.7c0 39.828 18.242 58.448 61.056 58.448 42.815 0 61.055-18.61 61.055-58.448v-159.7h54.35v170.866c0 58.071-36.85 94.933-115.405 94.933-78.551 0-115.404-37.231-115.404-95.301z">
+                        </path>
+                        <path
+                            d="m1370.62 222.913c0 29.04-16.75 51.372-39.09 61.056v.746c23.45 3.354 35.37 20.103 35.73 42.814l1.12 82.641h-54.35l-1.11-73.705c-.37-16.381-10.06-26.432-29.41-26.432h-90.47v100.137h-54.34v-261.33h150.02c49.15 0 81.9 24.94 81.9 74.083zm-54.73 7.454c0-22.333-11.91-34.623-34.24-34.623h-88.61v69.236h89.34c20.47 0 33.51-12.281 33.51-34.623z">
+                        </path>
+                        <path
+                            d="m1576.09 333.85c0-18.61-11.91-26.432-29.77-27.915l-60.31-5.583c-52.12-4.837-79.3-25.318-79.3-74.83 0-49.511 33.51-76.69 81.53-76.69h133.27v46.904h-129.55c-18.61 0-30.52 9.683-30.52 28.294 0 18.61 12.28 27.547 30.9 29.04l61.42 5.214c46.54 4.091 77.06 25.318 77.06 75.198s-32.38 76.69-78.17 76.69h-139.23v-46.904h134.01c17.5 0 28.66-11.912 28.66-29.408z">
+                        </path>
+                        <path
+                            d="m1789.79 144.373c81.89 0 133.65 52.487 133.65 134.761 0 82.273-53.98 135.506-135.88 135.506s-133.65-53.233-133.65-135.506c0-82.274 53.98-134.761 135.88-134.761zm77.43 135.129c0-55.095-32.02-87.479-78.56-87.479-46.53 0-78.55 32.384-78.55 87.479 0 55.094 32.02 87.478 78.55 87.478 46.54 0 78.56-32.384 78.56-87.478z">
+                        </path>
+                        <path
+                            d="m2192.95 222.913c0 29.04-16.75 51.372-39.1 61.056v.746c23.46 3.354 35.37 20.103 35.74 42.814l1.12 82.641h-54.35l-1.12-73.705c-.36-16.381-10.05-26.432-29.4-26.432h-90.47v100.137h-54.35v-261.33h150.03c49.14 0 81.9 24.94 81.9 74.083zm-54.73 7.454c0-22.333-11.91-34.623-34.25-34.623h-88.6v69.236h89.34c20.47 0 33.51-12.281 33.51-34.623z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li class="nav-item">Features</li>
+                    <li class="nav-item">Enterprise</li>
+                    <li class="nav-item">Pricing</li>
+                    <li class="nav-item">Resources</li>
+                </ul>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn btn-sign-in">Sign-in</button>
+                <button class="btn btn-download">Download</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-section container-padding cursor-font">
+            <h1 class="hero-heading">Built to make you extraordinarily productive, Cursor is the best way to code with
+                AI.</h1>
+            <button class="btn" id="main-download">Download for Windows<span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-download">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                        <path d="M7 11l5 5l5 -5" />
+                        <path d="M12 4l0 12" />
+                    </svg>
+                </span></button>
+            <div>
+                <img src="/images/image01.png" alt="main hero section image">
+            </div>
+        </section>
+        <section class="trusted-section container-padding cursor-font">
+            <p>Trusted every day by millions of professional developers.</p>
+            <div class="trusted-icon-holder">
+                <div class="trusted-icon">
+                    <img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-beae7a1f5d7eb381a872.svg"
+                        alt="stripe">
+                </div>
+                <div class="trusted-icon">
+                    <img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-53062f7690ae5b0cdbed.svg"
+                        alt="OpenAI">
+                </div>
+                <div class="trusted-icon">
+                    <img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-eb9e0a5931092d4db1dd.svg"
+                        alt="Linear">
+                </div>
+                <div class="trusted-icon">
+                    <img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-da55192921531e5fd2ba.svg"
+                        alt="DataDog">
+                </div>
+                <div class="trusted-icon">
+                    <img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-e3678011b17782740f98.svg"
+                        alt="Nvidia">
+                </div>
+                <div class="trusted-icon">
+                    <img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-105275382af564c3ab7c.svg"
+                        alt="Figma">
+                </div>
+                <div class="trusted-icon">
+                    <img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-cf60827b1c3f341d19ef.svg"
+                        alt="Ramp">
+                </div>
+                <div class="trusted-icon">
+                    <img src="https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/misc/asset-37d2d1a1edcce15ca38c.svg"
+                        alt="Adobe">
+                </div>
+            </div>
+        </section>
+        <section class="about-cursor container-padding cursor-font">
+            <div class="about-card">
+                <div class="about-card-description">
+                    <p class="about-desc-main-text">
+                        Agent turns ideas into code
+                    </p>
+                    <p class="about-desc-secondary-text">
+                        A human-AI programmer, orders of magnitude more effective than any developer alone.
+                    </p>
+                    <div class="btn-tertiary">Learn about Agent →</div>
+                </div>
+                <img width="840" src="/images/image02.png" alt="about cursor image 02">
+            </div>
+            <div class="about-card row-reverse">
+                <div class="about-card-description">
+                    <p class="about-desc-main-text">
+                        Agent turns ideas into code
+                    </p>
+                    <p class="about-desc-secondary-text">
+                        A human-AI programmer, orders of magnitude more effective than any developer alone.
+                    </p>
+                    <div class="btn-tertiary">Learn about Agent →</div>
+                </div>
+                <img width="840" src="/images/image02.png" alt="about cursor image 02">
+            </div>
+            <div class="about-card">
+                <div class="about-card-description">
+                    <p class="about-desc-main-text">
+                        Agent turns ideas into code
+                    </p>
+                    <p class="about-desc-secondary-text">
+                        A human-AI programmer, orders of magnitude more effective than any developer alone.
+                    </p>
+                    <div class="btn-tertiary">Learn about Agent →</div>
+                </div>
+                <img width="840" src="/images/image02.png" alt="about cursor image 02">
+            </div>
+        </section>
+        <section class="feedback-section container-padding cursor-font">
+            <p>The new way to build software.</p>
+            <div class="feedback-card-holder">
+                <div class="feedback-card">
+                    <div class="feedback-top">It was night and day from one batch to another, adoption went from single
+                        digits to over 80%. It just spread like wildfire, all the best builders were using Cursor.</div>
+                    <div class="feedback-bottom">
+                        <img src="https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Favatars%2Fdiana-hu-avatar.png&w=96&q=70"
+                            alt="">
+                        <div>
+                            <div class="feedback-author">Diana Hu</div>
+                            <div class="feedback-author-description">General Partner, Y Combinator
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-top">The most useful AI tool that I currently pay for, hands down, is Cursor.
+                        It's fast, autocompletes when and where you need it to, handles brackets properly, sensible
+                        keyboard shortcuts, bring-your-own-model... everything is well put together.
+
+                    </div>
+                    <div class="feedback-bottom">
+                        <img src="https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Favatars%2Fshadcn-avatar.png&w=96&q=70"
+                            alt="">
+                        <div>
+                            <div class="feedback-author">shadcn</div>
+                            <div class="feedback-author-description">Creator of shadcn/ui
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-top">The best LLM applications have an autonomy slider: you control how much
+                        independence to give the AI. In Cursor, you can do Tab completion, Cmd+K for targeted edits, or
+                        you can let it rip with the full autonomy agentic version.
+
+                    </div>
+                    <div class="feedback-bottom">
+                        <img src="https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Favatars%2Fandrej-karpathy-avatar.png&w=96&q=70"
+                            alt="">
+                        <div>
+                            <div class="feedback-author">Andrej Karpathy
+                            </div>
+                            <div class="feedback-author-description">CEO, Eureka Labs
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-top">Cursor quickly grew from hundreds to thousands of extremely enthusiastic
+                        Stripe employees. We spend more on R&D and software creation than any other undertaking, and
+                        there's significant economic outcomes when making that process more efficient and productive.
+
+                    </div>
+                    <div class="feedback-bottom">
+                        <img src="https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Favatars%2Fpatrick-collison-avatar.png&w=96&q=70"
+                            alt="">
+                        <div>
+                            <div class="feedback-author">Patrick Collison
+                            </div>
+                            <div class="feedback-author-description">Co‑Founder & CEO, Stripe
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-top">It's official.<br><br> I hate vibe coding.<br> I love Cursor tab coding.
+                        <br><br>It's wild.
+                    </div>
+                    <div class="feedback-bottom">
+                        <img src="https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Favatars%2Ftheprimeagen-avatar.png&w=96&q=70"
+                            alt="">
+                        <div>
+                            <div class="feedback-author">ThePrimeagen
+                            </div>
+                            <div class="feedback-author-description">@ThePrimeagen
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="feedback-card">
+                    <div class="feedback-top">It's definitely becoming more fun to be a programmer. It's less about
+                        digging through pages and more about what you want to happen. We are at the 1% of what's
+                        possible, and it's in interactive experiences like Cursor where models like GPT-5 shine
+                        brightest.
+
+                    </div>
+                    <div class="feedback-bottom">
+                        <img src="https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Favatars%2Fgreg-brockman-avatar.jpg&w=96&q=70"
+                            alt="">
+                        <div>
+                            <div class="feedback-author">Greg Brockman
+                            </div>
+                            <div class="feedback-author-description">President, OpenAI
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="frontier container-padding cursor-font">
+
+            <p class="frontier-heading">Stay on the frontier</p>
+            <div class="frontier-holder">
+                <div class="frontier-card">
+                    <p class="frontier-top-text">Access the best models</p>
+                    <p class="frontier-caption-text">Choose between every cutting-edge model from OpenAI, Anthropic,
+                        Gemini, and xAI.</p>
+                    <span class="btn-tertiary">Explore enterprise ↗</span>
+                    <img src="/images/image03.png" alt="">
+                </div>
+                <div class="frontier-card">
+                    <p class="frontier-top-text">Complete codebase understanding</p>
+                    <p class="frontier-caption-text">Cursor learns how your codebase works, no matter the scale or
+                        complexity.</p>
+                    <span class="btn-tertiary">Learn about semantic search ↗</span>
+                    <img src="/images/image04.png" alt="">
+                </div>
+                <div class="frontier-card">
+                    <p class="frontier-top-text">Develop enduring software</p>
+                    <p class="frontier-caption-text">Trusted by over half of the Fortune 500 to accelerate development,
+                        securely and at scale.</p>
+                    <span class="btn-tertiary">Explore enterprise →</span>
+                    <img src="/images/image05.png" alt="">
+                </div>
+            </div>
+
+        </section>
+        <section class="changelog cursor-font container-padding">
+            <p class="changelog-head">Changelog</p>
+            <div class="changelog-card-holder ">
+                <div class="changelog-card">
+                    <div class="changelog-top">
+                        <div class="changelog-badge">2.4</div>
+                        <div class="changelog-date">Jan 22, 2026</div>
+                    </div>
+                    <div class="changelog-bottom">Subagents, Skills, and Image Generation</div>
+                </div>
+                <div class="changelog-card">
+                    <div class="changelog-top">
+                        <div class="changelog-badge display-none">2.4</div>
+                        <div class="changelog-date">Jan 22, 2026</div>
+                    </div>
+                    <div class="changelog-bottom">Subagents, Skills, and Image Generation</div>
+                </div>
+                <div class="changelog-card">
+                    <div class="changelog-top">
+                        <div class="changelog-badge display-none">2.4</div>
+                        <div class="changelog-date">Jan 22, 2026</div>
+                    </div>
+                    <div class="changelog-bottom">Subagents, Skills, and Image Generation</div>
+                </div>
+                <div class="changelog-card">
+                    <div class="changelog-top">
+                        <div class="changelog-badge">2.4</div>
+                        <div class="changelog-date">Jan 22, 2026</div>
+                    </div>
+                    <div class="changelog-bottom">Subagents, Skills, and Image Generation</div>
+                </div>
+            </div>
+            <span class="changelog-btn btn-tertiary">See what's new in Cursor →</span>
+        </section>
+        <section class="more-feature container-padding cursor-font">
+            <p class="more-feature-heading">Cursor is an applied team focused on building the future of coding.</p>
+            <button class="btn btn-feature">Join us <span>→</span></button>
+            <img src="https://cursor.com/marketing-static/_next/image?url=https%3A%2F%2Fptht05hbb1ssoooe.public.blob.vercel-storage.com%2Fassets%2Fhomepage%2Fhomepage-team-photo.jpg&w=1920&q=70"
+                alt="">
+        </section>
+        <section class="highligh-main">
+            <div class="highlight-holder container-padding cursor-font">
+                <p class="highligh-main-text">Recent Highlights</p>
+                <div class="highlight-card">
+                    <div class="h-top">
+                        <div class="h-main-heading">Introducing Cursor 2.0 and Composer</div>
+                        <div class="h-sub-heading">A new interface and our first coding model, both purpose-built for
+                            working with agents.</div>
+                    </div>
+                    <div class="h-bottom-desc">Product <span>.</span> Oct 29, 2025</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="h-top">
+                        <div class="h-main-heading">Introducing Cursor 2.0 and Composer</div>
+                        <div class="h-sub-heading">A new interface and our first coding model, both purpose-built for
+                            working with agents.</div>
+                    </div>
+                    <div class="h-bottom-desc">Product <span>.</span> Oct 29, 2025</div>
+                </div>
+                <div class="highlight-card">
+                    <div class="h-top">
+                        <div class="h-main-heading">Introducing Cursor 2.0 and Composer</div>
+                        <div class="h-sub-heading">A new interface and our first coding model, both purpose-built for
+                            working with agents.</div>
+                    </div>
+                    <div class="h-bottom-desc">Product <span>.</span> Oct 29, 2025</div>
+                </div>
+                <div class="h-link-holder">
+                    <span class="btn-tertiary h-link">View more posts →</span>
+                </div>
+            </div>
+        </section>
+        <section class="try cursor-font">
+            <p>Try Cursor now.</p>
+            <button class="btn" id="main-download">Download for Windows<span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-download">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+                        <path d="M7 11l5 5l5 -5" />
+                        <path d="M12 4l0 12" />
+                    </svg>
+                </span></button>
+        </section>
+        <footer class="footer cursor-font">
+            <div class="footer-holder container-padding">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <p class="footer-title">Product</p>
+                        <a href="#" class="footer-link">Features</a>
+                        <a href="#" class="footer-link">Enterprise</a>
+                        <a href="#" class="footer-link">Web Agents</a>
+                        <a href="#" class="footer-link">Bugbot</a>
+                        <a href="#" class="footer-link">CLI</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-title">Resources</p>
+                        <a href="#" class="footer-link">Download</a>
+                        <a href="#" class="footer-link">Changelog</a>
+                        <a href="#" class="footer-link">Docs</a>
+                        <a href="#" class="footer-link">Learn</a>
+                        <a href="#" class="footer-link">Forum</a>
+                        <a href="#" class="footer-link">Status</a>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-title">Company</p>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Community</a>
+                        <a href="#" class="footer-link">Workshops</a>
+                        <a href="#" class="footer-link">Students</a>
+                        <a href="#" class="footer-link">Brand</a>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-title">Legal</p>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Data Use</a>
+                        <a href="#" class="footer-link">Security</a>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-title">Connect</p>
+                        <a href="#" class="footer-link">X</a>
+                        <a href="#" class="footer-link">LinkedIn</a>
+                        <a href="#" class="footer-link">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-left">
+                        <p class="footer-copy">© 2026 Cursor</p>
+                        <p class="footer-cert"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-shield-check"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11.998 2l.118 .007l.059 .008l.061 .013l.111 .034a.993 .993 0 0 1 .217 .112l.104 .082l.255 .218a11 11 0 0 0 7.189 2.537l.342 -.01a1 1 0 0 1 1.005 .717a13 13 0 0 1 -9.208 16.25a1 1 0 0 1 -.502 0a13 13 0 0 1 -9.209 -16.25a1 1 0 0 1 1.005 -.717a11 11 0 0 0 7.531 -2.527l.263 -.225l.096 -.075a.993 .993 0 0 1 .217 -.112l.112 -.034a.97 .97 0 0 1 .119 -.021l.115 -.007zm3.71 7.293a1 1 0 0 0 -1.415 0l-3.293 3.292l-1.293 -1.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l2 2l.094 .083a1 1 0 0 0 1.32 -.083l4 -4l.083 -.094a1 1 0 0 0 -.083 -1.32z" /></svg> SOC 2 Certified</p>
+                    </div>
+
+                    <div class="footer-right">
+                        <div class="footer-actions">
+                            <button class="footer-icon-btn" aria-label="display">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-device-desktop"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 5a1 1 0 0 1 1 -1h16a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10" /><path d="M7 20h10" /><path d="M9 16v4" /><path d="M15 16v4" /></svg>
+                            </button>
+                            <button class="footer-icon-btn" aria-label="theme">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-brightness-down"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 8a4 4 0 1 1 -3.995 4.2l-.005 -.2l.005 -.2a4 4 0 0 1 3.995 -3.8z" /><path d="M12 4a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" /><path d="M17 6a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" /><path d="M19 11a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" /><path d="M17 16a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" /><path d="M12 18a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" /><path d="M7 16a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" /><path d="M5 11a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" /><path d="M7 6a1 1 0 0 1 .993 .883l.007 .127a1 1 0 0 1 -1.993 .117l-.007 -.127a1 1 0 0 1 1 -1z" /></svg>
+                            </button>
+                            <button class="footer-icon-btn" aria-label="moon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-moon"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454l0 .008" /></svg>
+                            </button>
+                        </div>
+
+                        <select class="footer-lang-btn">
+                            <option value="English" default>English</option>
+                            <option value="English" default>Hindi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+</html>
